@@ -20,7 +20,8 @@ class WeightInput extends React.Component {
 
     return (
       <div>
-        <input type="text" placeholder={exampleWeight} onChange={this.onChange} />
+        <input type="text" placeholder={exampleWeight}
+               onChange={this.onChange} />
         {metric}
       </div>
     );

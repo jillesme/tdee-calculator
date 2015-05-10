@@ -24,8 +24,10 @@ class FeetInches extends React.Component {
   render () {
     return (
       <div>
-        <input type="text" placeholder="5" onChange={this.onChange.bind(this, 'feet')} /> feet
-        <input type="text" placeholder="0" onChange={this.onChange.bind(this, 'inches')} /> inches
+        <input type="text" placeholder="5"
+               onChange={this.onChange.bind(this, 'feet')} /> feet
+        <input type="text" placeholder="0"
+               onChange={this.onChange.bind(this, 'inches')} /> inches
       </div>
     );
   }

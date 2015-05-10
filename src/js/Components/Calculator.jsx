@@ -18,7 +18,7 @@ class Calculator extends React.Component {
       weight: '',
       gender: 'male',
       age: '',
-      exercise: 'no-exercise',
+      exercise: 'no-exercise'
     };
 
     this.updateState = this.updateState.bind(this);
@@ -41,9 +41,10 @@ class Calculator extends React.Component {
       male: 5,
       female: -161
     };
-    let bmr = (10 * this.state.weight) + (6.25 * this.state.height) - (5 * this.state.age);
-    console.log(`(10 * ${this.state.weight}) + (6.25 * ${this.state.height}) - (5 * ${this.state.age})`);
-    console.log(`+= ${difference[this.state.gender]}`);
+    let bmr = (10 * this.state.weight)
+      + (6.25 * this.state.height)
+      - (5 * this.state.age);
+
     bmr += difference[this.state.gender];
     bmr = Math.round(bmr);
 

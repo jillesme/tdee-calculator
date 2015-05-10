@@ -13,9 +13,11 @@ class Metric extends React.Component {
     return (
       <div>
 
-        <input type="radio" name="metric" value="kg" defaultChecked="checked" onChange={this.onChange} /> kg &amp; cm
+        <input type="radio" name="metric" value="kg" defaultChecked="checked"
+               onChange={this.onChange} /> kg &amp; cm
         <br/>
-        <input type="radio" name="metric" value="lbs" onChange={this.onChange} /> lbs &amp; feet/inches
+        <input type="radio" name="metric" value="lbs"
+               onChange={this.onChange} /> lbs &amp; feet/inches
 
       </div>
     );

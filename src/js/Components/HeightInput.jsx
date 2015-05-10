@@ -21,8 +21,14 @@ class HeightInput extends React.Component {
 
   render () {
 
-    let input = (<div><input type="text" placeholder="183" onChange={this.onChange} /> cm</div>);
-    if (this.props.metric === 'lbs') input = <FeetInches update={this.updateFi} />;
+    let input = (
+      <div>
+        <input type="text" placeholder="183" onChange={this.onChange} /> cm
+      </div>
+    );
+    if (this.props.metric === 'lbs') {
+      input = <FeetInches update={this.updateFi} />;
+    }
 
     return (
       <div>
